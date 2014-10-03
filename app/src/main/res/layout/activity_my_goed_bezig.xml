@@ -67,10 +67,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vestuur"
+        android:text="Verstuur"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/toelichting"
         android:layout_alignEnd="@+id/toelichting" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bijlage"
+        android:id="@+id/button2"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
