@@ -19,7 +19,6 @@ public class MyGoedBezig extends Activity {
     Button but3;
     EditText idee;
     EditText toelichting;
-
     Uri uri;
     ImageView iv;
 
