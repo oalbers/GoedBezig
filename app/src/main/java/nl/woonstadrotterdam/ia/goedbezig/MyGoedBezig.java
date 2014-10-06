@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 
 import android.widget.Button;
@@ -23,9 +25,19 @@ public class MyGoedBezig extends Activity {
     ImageView iv;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_bar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_goed_bezig);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         but = (Button) findViewById(R.id.button);
         idee = (EditText) findViewById(R.id.idee);
